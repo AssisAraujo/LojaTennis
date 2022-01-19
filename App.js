@@ -7,6 +7,7 @@ import {useFonts, Anton_400Regular} from '@expo-google-fonts/anton';
 
 
 import Routes from './src/router';
+import { View } from 'react-native';
 
 export default function App() {
 let [fontsLoaded] = useFonts({
@@ -18,10 +19,10 @@ if(!fontsLoaded){
 }
 
   return (
-    <>
+    <View>
       <StatusBar style="light" backgroundColor='#000' translucent={true} />
       <Routes/>
-    </>
+    </View>
   );
 }
 
